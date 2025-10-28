@@ -69,3 +69,4 @@ def textwidgetcopy(from_widget = None, to_widget = None, clear_out_widget: bool=
                     to_widget.tag_config(tag_name, p)
     to_widget.config(state=out_state)
 
+
