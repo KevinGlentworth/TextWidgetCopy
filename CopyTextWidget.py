@@ -1,6 +1,6 @@
 from tkinter.font import Font
 
-def copytextwidget(from_widget = None, to_widget = None, clear_out_widget: bool=True, copy_all: bool = False):
+def textwidgetcopy(from_widget = None, to_widget = None, clear_out_widget: bool=True, copy_all: bool = False):
     text_detail = from_widget.get('1.0', 'end')
     out_state = to_widget.cget('state')
     to_widget.config(state='normal')
@@ -68,3 +68,4 @@ def copytextwidget(from_widget = None, to_widget = None, clear_out_widget: bool=
                 else:
                     to_widget.tag_config(tag_name, p)
     to_widget.config(state=out_state)
+
